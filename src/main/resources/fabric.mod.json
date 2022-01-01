@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "koala_tea",
+  "version": "${version}",
+  "name": "KoalaTea",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/KoalaTea/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "systems.asteru.minecraft.koala_tea.client.KoalaTeaClient"
+    ],
+    "main": [
+      "systems.asteru.minecraft.koala_tea.KoalaTea"
+    ]
+  },
+  "mixins": [
+    "KoalaTea.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.12",
+    "fabric": "*",
+    "minecraft": "1.18.1"
+  }
+}
